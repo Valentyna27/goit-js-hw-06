@@ -6,19 +6,19 @@ class Storage {
 
   getItems() {
     return this.#items;
+   
   }
 
   addItem(newItem) {
-    return this.#items.push(newItem);
+    this.#items.push(newItem);
   }
 
   removeItem(itemToRemove) {
-     this.#items = this.#items.filter((item) => item !== itemToRemove);
+   this.#items=this.#items.filter((item) => item !== itemToRemove);
 
-    // const removeItemIndex = this.#items.indexOf(itemToRemove);
-    // if (removeItemIndex !== -1) {
-    //   this.#items.splice(removeItemIndex, 1);
-    // }
+//     const removeItemIndex = this.#items.indexOf(itemToRemove);
+//     if (removeItemIndex !== -1) {
+//  this.#items.splice(removeItemIndex, 1);}
   }
 }
 
